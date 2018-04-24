@@ -143,7 +143,7 @@ def main():
 		# Loop over list of favorited tracks
 		for track in tracks.collection:
 			# Download current track, or skip if already downloaded
-			download(track.fields()['stream_url'] + '?client_id=' + client_id, convert_unicode(track.fields()['user']['username']), convert_unicode(track.fields()['title']), outputDirectory):
+			download(track.fields()['stream_url'] + '?client_id=' + client_id, convert_unicode(track.fields()['user']['username']), convert_unicode(track.fields()['title']), outputDirectory)
 			# Tag file with meta data
 			tag_file(join(outputDirectory, convert_unicode(track.fields()['user']['username']), convert_unicode(track.fields()['title']) + '.mp3'), 
 				convert_unicode(track.fields()['user']['username']),
