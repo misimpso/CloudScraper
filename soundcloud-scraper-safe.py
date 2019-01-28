@@ -74,13 +74,13 @@ class DownloadWorker(threading.Thread):
 			for chunk in response.iter_content(chunk_size):
 				mp3.write(chunk)
 				bytes_so_far += len(chunk)
-				percent = round((float(bytes_so_far) / total_size), 2)
+				percent = round((float(bytes_so_far) / total_size), 4)
 				
 				# Enqueue status so far
 				self.result_q.put((self.id, percent, "Downloading /// {} -- {}".format(convert_unicode(curr_task.fields()["user"]["username"]), convert_unicode(curr_task.fields()["title"]))))
 			
 			# Enqueue status when finished downloading
-			self.result_q.put((self.id, round((float(bytes_so_far) / total_size), 4), "Completed ///// {} -- {}".format(convert_unicode(curr_task.fields()["user"]["username"]), convert_unicode(curr_task.fields()["title"]))))
+			self.result_q.put((self.id, percent, "Completed ///// {} -- {}".format(convert_unicode(curr_task.fields()["user"]["username"]), convert_unicode(curr_task.fields()["title"]))))
 		
 		# Clean up after ourselves
 		response = None
