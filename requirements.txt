@@ -11,7 +11,7 @@ mutagen == 1.41.1
 
 # soundcloud-scraper-safe.py: 20
 # soundcloud-scraper.py: 20
-requests == 2.18.4
+requests == 2.21.0
 
 # soundcloud-scraper-safe.py: 22
 # soundcloud-scraper.py: 22
