@@ -9,7 +9,7 @@ Unidecode == 1.1.1
 
 # soundcloud_scraper.py: 12
 # soundcloud_scraper_safe.py: 12
-aiohttp == 3.6.2
+aiohttp == 3.7.4
 
 # soundcloud_scraper.py: 13
 # soundcloud_scraper_safe.py: 13
