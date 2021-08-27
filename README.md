@@ -1,4 +1,7 @@
 # CloudScraper
-Multithreaded console application for downloading tracks from user's favorite's list.
+Bulk download Liked / Favorited tracks using Soundcloud API
 
-Uses curses for console display, and soundcloud python api for user playlist requesting and downloading. 
+## Pre-requirements
+You will need your:
+1. Soundcloud account ID
+2. Soundcloud API Client ID
