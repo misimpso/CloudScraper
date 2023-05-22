@@ -28,7 +28,7 @@ mutagen == 1.42.0
 
 # soundcloud_scraper_safe_v1.py: 21
 # soundcloud_scraper_v1.py: 17
-requests == 2.22.0
+requests == 2.31.0
 
 # soundcloud_scraper.py: 16
 # soundcloud_scraper_safe.py: 16
